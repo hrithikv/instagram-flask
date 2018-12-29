@@ -1,13 +1,7 @@
 <html>
     <body>
         <div><a href="{{ homeUrl }}">フォームに戻る</a></div>
-        {% for i in data %}
             <p>本文</p>
-            <p>{{ i['node']['edge_media_to_caption']['edges'][0]['node']['text'] }}</p><br>
-            <p>いいね数</p>
-            <p>{{ i['node']['edge_liked_by'] }}</p><br>
-            <p>画像</p>
-            <img src={{ i['node']['display_url'] }}><br><br>
-        {% endfor %}
+            <p>{{ data }}</p><br>
     </body>
 </html>
